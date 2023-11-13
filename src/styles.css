@@ -1,0 +1,182 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-image: url(/assets/layered-waves.svg);
+    background-size: cover;
+}
+
+h1, h2, h3, p, hr {
+    color: #DEFCFF;
+}
+
+.title-text {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 75px;
+    text-align: center;
+    width: auto;
+}
+
+.title-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+
+h1 {
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 26px;
+    margin-top: 12px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 75%;
+}
+
+.homepage-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+    text-decoration: none;
+
+    border-top: 4px solid #6ccaf9;
+    border-bottom: 4px solid #6ccaf9;
+    color: #DEFCFF;
+
+    transition-duration: 0.6s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+}
+
+.homepage-btn:hover {
+    transition-duration: 0.4s;
+    transition-property: color;
+    transition-timing-function: ease-in-out;
+    color: #6ccaf9;
+}
+
+.title-wrapper {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.title-section hr {
+    width: 20vw;
+    height: 4px;
+    background-color: #6ccaf9;
+    border: none;
+    top: 50%;
+    margin: 0;
+}
+
+.title-text {
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 6px;
+}
+
+.info-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+.cursive-header {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 46px;
+    line-height: 46px;
+}
+
+.cursive-subtitle {
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 40px;
+    line-height: 42px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.footer {
+    width: 100%;
+    left: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    border-top: 3px solid #6ccaf9;
+}
+
+.footer-text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navigation-buttons {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        width: 100%;
+    }
+
+    .homepage-btn {
+        width: 100px;
+
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

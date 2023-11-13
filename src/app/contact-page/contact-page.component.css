@@ -1,0 +1,56 @@
+.contactpage-wrapper {
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 99vh;
+}
+
+.contact-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -12px;
+    height: 60vh;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.contact-text {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.cursive-subtitle {
+    margin-bottom: 24px;
+    margin-top: 46px;
+}
+
+.contact-info hr {
+    width: 50%;
+    height: 2.5px;
+    background-color: #6ccaf9;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-info {
+        height: auto;
+    }
+
+    .contactpage-wrapper {
+        height: auto;
+    }
+    
+}
