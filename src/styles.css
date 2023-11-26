@@ -10,6 +10,37 @@ h1, h2, h3, p, hr {
     color: #DEFCFF;
 }
 
+
+
+.nav-bar{
+    list-style-type: none;
+    display: flex;
+    padding-left: 12px;
+}
+.search{
+    padding-top: 1%;
+    height: 82%;
+    width: 11%;
+}
+.search-dec{
+    padding: 6px 6px;
+    vertical-align: super;
+    padding-left: 9%;
+    position: relative;
+    right: -23%;
+}
+.search-input{
+    width: 376px;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    border-right-width: 0px;
+    height: 53px;
+    font-size: x-large;
+    text-align: center;
+}
+
 .title-text {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
@@ -75,10 +106,10 @@ h1 {
     text-align: center;
     text-decoration: none;
 
-    border-top: 4px solid #6ccaf9;
-    border-bottom: 4px solid #6ccaf9;
+    /* border-top: 4px solid #6ccaf9;
+    border-bottom: 4px solid #6ccaf9; */
     color: #DEFCFF;
-
+    padding-top: 15px;
     transition-duration: 0.6s;
     transition-property: color;
     transition-timing-function: ease-in-out;
