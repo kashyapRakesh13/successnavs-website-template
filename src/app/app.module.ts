@@ -9,6 +9,8 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
       { path: '', component: HomepageComponent },
       { path: 'about', component: AboutPageComponent },
       { path: 'products', component: ProductsComponent },
-      { path: 'contact', component: ContactPageComponent }
+      { path: 'contact', component: ContactPageComponent },
+      { path: '**', pathMatch: 'full',   component: HomepageComponent }
     ])
   ],
   providers: [],
