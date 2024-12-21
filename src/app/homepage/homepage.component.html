@@ -1,24 +1,27 @@
-<div class="homepage-wrapper">
-    <div class="title-section">
-        <div class="title-wrapper">
-            <hr>
-            <h1 class="title-text">Success Navigators Inc.</h1>
-            <hr>
-        </div>
-        <!--This is the welcome page of your website. 
-            Add your business name with a call to action 
-            to your services/products or contact page. 
-            Provide a brief description of why your 
-            customers should choose you.-->
-    </div>
-
-    <div class="navigation-buttons">
+<nav class="nav-success">
+    <div class="nav-img">
+        <img (click)="routeToHome()" class="img-adjust" src="../../assets/success_navs1.png" />
+        
         <div class="nav-wrapper">
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/about']" role="button"><i>About Us</i></a>
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/products']" role="button"><i>Services</i></a>
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/contact']" role="button"><i>Contact</i></a>
+            <a [ngClass]="{'text-click' : isHome}" (click)="addBoldClass('home')" class="homepage-btn text-hover"   [routerLink]="['/']" role="button"> <i>Home</i></a>
+            
+            
+            <a   [ngClass]="{'text-click' : isAbout}" (click)="addBoldClass('about')"  class=" homepage-btn text-hover" [routerLink]="['/about']" role="button"><i>About Us</i></a>
+            <a [ngClass]="{'text-click' : isService}" (click)="addBoldClass('service')" class=" homepage-btn text-hover" [routerLink]="['/products']" role="button"><i>Services</i></a>
+            
+            <a [ngClass]="{'text-click' : isContact}" (click)="addBoldClass('contact')" class="homepage-btn text-hover" [routerLink]="['/contact']" role="button"><i>Contact Us</i></a>
+            
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a [ngClass]="{'text-click' : isLogin}" (click)="addBoldClass('login')" class=" homepage-btn text-hover" role="button"><fa-icon [icon]="faSignIn" style="padding-right: 7px;"></fa-icon><i>Login</i></a>
         </div>
     </div>
+</nav>
+
+
+<div class="homepage-wrapper">
 
     <div class="intro-section">
         <div class="img-wrapper">
@@ -56,7 +59,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer-home">
         <p class="footer-text">Copyright © 2023 Success Navigators Inc. - All rights reserved. </p>
     </div>
 </div>

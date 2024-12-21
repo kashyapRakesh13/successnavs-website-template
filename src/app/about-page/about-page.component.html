@@ -1,63 +1,117 @@
-<div class="aboutpage-wrapper">
-    <div class="title-section">
-        <div class="title-wrapper">
-            <hr>
-            <h1 class="title-text">Success Navigators Inc.</h1>
-            <hr>
-        </div>
-    </div>
-
-    <div class="navigation-buttons">
+<nav class="nav-success">
+    <div class="nav-img">
+        <img (click)="routeToHome()" class="img-adjust" src="../../assets/success_navs1.png" />
+        
         <div class="nav-wrapper">
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/products']" role="button"><i>Services</i></a>
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/']" role="button"><i>Home</i></a>
-            <a class="btn btn-primary homepage-btn" [routerLink]="['/contact']" role="button"><i>Contact</i></a>
+            <a [ngClass]="{'text-click' : isHome}" (click)="addBoldClass('home')" class="homepage-btn text-hover"   [routerLink]="['/']" role="button"> <i>Home</i></a>
+            
+            
+            <a   [ngClass]="{'text-click' : isAbout}" (click)="addBoldClass('about')"  class=" homepage-btn text-hover" [routerLink]="['/about']" role="button"><i>About Us</i></a>
+            <a [ngClass]="{'text-click' : isService}" (click)="addBoldClass('service')" class=" homepage-btn text-hover" [routerLink]="['/products']" role="button"><i>Services</i></a>
+            
+            <a [ngClass]="{'text-click' : isContact}" (click)="addBoldClass('contact')" class="homepage-btn text-hover" [routerLink]="['/contact']" role="button"><i>Contact Us</i></a>
+            
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a [ngClass]="{'text-click' : isLogin}" (click)="addBoldClass('login')" class=" homepage-btn text-hover" role="button"><fa-icon [icon]="faSignIn" style="padding-right: 7px;"></fa-icon><i>Login</i></a>
         </div>
     </div>
+</nav>
 
+
+<div>
     <div class="section-title">
         <h3 class="cursive-subtitle">Company Mission</h3>
-        <hr>
-        <table class="table table-primary">
+
+        <table class="table table-primary" class="table-decor">
             <tbody>
-              <tr>
-              <td class="info-text-center" colspan="2">"At Success Navigators Inc. our mission is to empower businesses through innovative and strategic information technology solutions.We are committed to guiding our clients on their digital journey, providing them with the tools and expertise needed to thrive in an ever-evolving technological landscape.</td>
-              </tr>
-              <tr><td></td><td></td></tr>
-              <tr><td></td><td></td></tr>
-              <tr><td></td><td></td></tr>
-              <tr><td></td><td></td></tr>
-              <tr><td></td><td></td></tr>
-              <tr><td></td><td></td></tr>
-              <tr>
-              <td class="info-text-left"><b>Client-Centric Excellence:</b><br>We prioritize our clients' needs and aspirations,<br> aiming for excellence in every aspect of our service delivery.</td>
-			   <td class="info-text-left"><b>Innovation for Impact:</b><br>We embrace innovation as a driving force,<br> continuously exploring emerging technologies to create impactful solutions that propel our clients ahead of the competition.</td>
-              </tr>
-              <tr>
-              <td class="info-text-left"><b>Strategic Partnership:</b><br>We view our clients as partners, <br>working collaboratively to align technology initiatives with business goals, ensuring a roadmap for sustainable growth.</td>
-              <td class="info-text-left"><b>Ethical and Responsible Practices:</b><br>We uphold the highest ethical standards in all our interactions. Our commitment to responsible practices extends to environmental sustainability and social responsibility.</td>
-              </tr>
-              <tr>
-              <td class="info-text-left"><b>Agility and Adaptability:</b><br>We recognize the dynamic nature of the business environment. Our solutions are designed to be scalable, flexible, and adaptable to meet the evolving needs of our clients.</td>
-              <td class="info-text-left"><b>Global Vision, Local Impact:</b><br>With a global perspective and local expertise, we aim to make a positive impact on businesses in our communities while providing insights and solutions that transcend geographical boundaries.</td>
-              </tr>
-              </tbody>
-             </table>
+                <tr>
+                    <td class="info-text-center" colspan="2">At Success Navigators Inc. our mission is to empower
+                        businesses through innovative and strategic information technology solutions.We are committed to
+                        guiding our clients on their digital journey, providing them with the tools and expertise needed
+                        to thrive in an ever-evolving technological landscape.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="info-text"><b>Client-Centric Excellence:</b><br>
+                        <p >We prioritize our clients' needs and
+                        aspirations, aiming for  excellence  in every aspect of our service delivery.</p></td>
+                    <td class="info-text"><b>Innovation for Impact:</b><br>
+                        <p >We embrace innovation as a driving
+                        force, continuously exploring emerging technologies to create impactful solutions that
+                        propel our clients ahead of the competition.</p></td>
+                </tr>
+                <tr>
+                    <td class="info-text"><b>Strategic Partnership:</b><br>
+                        <p >We view our clients as partners, working collaboratively to aligned technology initiatives with business goals, ensuring a 
+                        roadmap for sustainable growth.</p></td>
+                    <td class="info-text"><b>Ethical and Responsible Practices:</b><br>
+                        <p >We uphold the highest
+                        ethical standards in all our interactions. Our commitment to responsible practices extends to
+                        environmental sustainability and social responsibility.</p></td>
+                </tr>
+                <tr>
+
+                    <td class="info-text"><b>Agility and Adaptability:</b><br>
+                        <p >We recognize the dynamic nature of
+                        the business environment. Our solutions are designed to be scalable, flexible, and adaptable to
+                        meet the evolving needs of our clients.</p></td>
+                    <td class="info-text"><b>Global Vision, Local Impact:</b><br>
+                        <p >With a global perspective and
+                        local expertise, we aim to make a positive impact on businesses in our communities while
+                        providing insights and solutions that transcend geographical boundaries.</p></td>
+                </tr>
+            </tbody>
+        </table>
 
         <h3 class="cursive-subtitle">Our Origins</h3>
-        <hr>
-        <div class="image-and-desc">
-            <img class="founders-img" src="../../assets/Success Navigators-logos.jpeg"
-                    alt="A picture of Brendan (left, standing) and Jenna (right, sitting) on the rooftop of a parking deck in Charlotte, NC">
 
-            <h3 class="info-text founder-text">At Success Navigators Inc., our journey began with a vision to redefine the way businesses navigate the complexities of the digital landscape. Established in 2023, our founders recognized a growing need for strategic IT guidance that goes beyond conventional consulting. The aspiration was clear: to create a consultancy that not only delivers solutions but also becomes a transformative force in the evolution of businesses.</h3>
+        <div class="image-and-desc">
+            <img class="description-img" src="../../assets/success_navs1.png"
+                alt="A picture of Brendan (left, standing) and Jenna (right, sitting) on the rooftop of a parking deck in Charlotte, NC">
+
+            <p class="info-text">At Success Navigators Inc., our journey began with a vision to redefine
+                the way businesses navigate the complexities of the digital landscape. Established in 2023, our founders
+                recognized a growing need for strategic IT guidance that goes beyond conventional consulting. The
+                aspiration was clear: to create a consultancy that not only delivers solutions but also becomes a
+                transformative force in the evolution of businesses.</p>
         </div>
 
-        <h3 class="cursive-subtitle">Our Vision for the Future:</h3>
-        <hr>
-        <h3 class="info-text">We envision a future where businesses harness the full potential of technology to drive innovation, achieve sustainable growth, and make a positive impact on the world. Through our mission, we aspire to be the trusted partner that propels organizations toward this vision, transforming challenges into opportunities and aspirations into achievements.
+        <h3 class="cursive-subtitle">Our Vision for the Future</h3>
+
+        <p class="info-text" style="padding-left: 7%;">We envision a future where businesses harness the full potential of technology to drive
+            innovation, achieve sustainable growth, and make a positive impact on the world. Through our mission, we
+            aspire to be the trusted partner that propels organizations toward this vision, transforming challenges into
+            opportunities and aspirations into achievements.
             <br>
-            At Success Navigators Inc., we don't just provide IT solutions; we pave the way for a digital future filled with possibilities. Join us on this transformative journey, where your success is our mission."</h3>
+            At Success Navigators Inc., we don't just provide IT solutions; we pave the way for a digital future filled
+            with possibilities. Join us on this transformative journey, where your success is our mission.
+        </p>
     </div>
 
     <div class="footer">

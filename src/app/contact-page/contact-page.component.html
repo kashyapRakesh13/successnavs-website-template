@@ -1,5 +1,28 @@
+<nav class="nav-success">
+    <div class="nav-img">
+        <img (click)="routeToHome()" class="img-adjust" src="../../assets/success_navs1.png" />
+        
+        <div class="nav-wrapper">
+            <a [ngClass]="{'text-click' : isHome}" (click)="addBoldClass('home')" class="homepage-btn text-hover"   [routerLink]="['/']" role="button"> <i>Home</i></a>
+            
+            
+            <a   [ngClass]="{'text-click' : isAbout}" (click)="addBoldClass('about')"  class=" homepage-btn text-hover" [routerLink]="['/about']" role="button"><i>About Us</i></a>
+            <a [ngClass]="{'text-click' : isService}" (click)="addBoldClass('service')" class=" homepage-btn text-hover" [routerLink]="['/products']" role="button"><i>Services</i></a>
+            
+            <a [ngClass]="{'text-click' : isContact}" (click)="addBoldClass('contact')" class="homepage-btn text-hover" [routerLink]="['/contact']" role="button"><i>Contact Us</i></a>
+            
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a class=" homepage-btn" role="button"><i></i></a>
+            <a [ngClass]="{'text-click' : isLogin}" (click)="addBoldClass('login')" class=" homepage-btn text-hover" role="button"><fa-icon [icon]="faSignIn" style="padding-right: 7px;"></fa-icon><i>Login</i></a>
+        </div>
+    </div>
+</nav>
+
+
 <div class="contactpage-wrapper">
-    <div class="title-section">
+    <!-- <div class="title-section">
         <div class="title-wrapper">
             <hr>
             <h1 class="title-text">Success Navigators Inc.</h1>
@@ -13,7 +36,7 @@
             <a class="btn btn-primary homepage-btn" [routerLink]="['/']" role="button"><i>Home</i></a>
             <a class="btn btn-primary homepage-btn" [routerLink]="['/products']" role="button"><i>Services</i></a>
         </div>
-    </div>
+    </div> -->
 
     <div class="contact-info">
         <h3 class="cursive-subtitle">Contact Us</h3>
@@ -24,13 +47,15 @@
         <h3 class="contact-text"><i>Success Navigators Inc.</i></h3>
         <h3 class="contact-text">3343, Peachtree Rd NE Ste 145-2895</h3>
 		<h3 class="contact-text">Atlanta, GA 30326</h3>
-		 <h3 class="contact-text">Phone - +1 (404) 493-5307 </h3>
-        <h3 class="contact-text">Email Address - ksingh@successnavs.com</h3>
+        <h3 class="contact-text">Email Address - connect@successnavs.com</h3>
 		<h3 class="contact-text">Business Hours - Mondays through Fridays, 9:00AM - 6:00PM EST</h3>
 
     </div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         <p class="footer-text">Copyright © 2023 Success Navigators Inc. - All rights reserved. </p>
-    </div>
+    </div> -->
+</div>
+<div class="footer">
+    <p class="footer-text">Copyright © 2023 Success Navigators Inc. - All rights reserved. </p>
 </div>
